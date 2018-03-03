@@ -4,35 +4,35 @@ import Result from './components/result/Result';
 import './App.css';
 
 class App extends Component {
-	onUpdateTotal = (pros, cons) => {
-		let totalScore = {};
+  onUpdateTotal = (pros, cons) => {
+    let totalScore = {};
 
-		Object.assign(totalScore, pros);
-		Object.assign(totalScore, cons);
+    Object.assign(totalScore, pros);
+    Object.assign(totalScore, cons);
 
-		this.setState({total: totalScore});
-	};
+    this.setState({total: totalScore});
+  };
 
-	showResult = () => {
-		this.setState({resultIsShown: true});
-	};
+  showResult = () => {
+    this.setState({resultIsShown: true});
+  };
 
-	state = {
-		total: {},
-		resultIsShown: false
-	};
+  state = {
+    total: {},
+    resultIsShown: false
+  };
 
-	render() {
-		return (
-				<div className="app-container">
-					<List updateTotal={this.onUpdateTotal}/>
+  render() {
+    return (
+      <div className="app-container">
+        <List updateTotal={this.onUpdateTotal}/>
 
-					<button onClick={this.showResult} className="app-button result-button">See Result</button>
+        <button onClick={this.showResult} className="app-button result-button">See Result</button>
 
-					<Result total={this.state.total} isShown={this.state.resultIsShown}/>
-				</div>
-		);
-	}
+        <Result total={this.state.total} isShown={this.state.resultIsShown}/>
+      </div>
+    );
+  }
 }
 
 export default App;
