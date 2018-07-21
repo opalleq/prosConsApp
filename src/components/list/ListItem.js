@@ -28,7 +28,7 @@ export default class ListItem extends Component {
   render() {
     return (
       <div
-        className={'list-item list-item-' + this.props.type + ' severity-' + this.props.type + '-' + Constants.SEVERITY_LEVEL[this.state.severity]}>
+        className={'list-item list-item-' + this.props.type + ' severity-' + this.props.type + ' ' + Constants.SEVERITY_LEVEL[this.state.severity]}>
         <input type="text" onChange={this.checkInputValue}/>
         <button
           className={'app-button severity-switcher ' + Constants.SEVERITY_LEVEL[this.state.severity] + (this.state.inputValue ? '' : ' hidden')}

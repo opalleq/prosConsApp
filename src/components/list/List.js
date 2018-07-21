@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as Constants from './../../Constants'
 import ListRow from './ListRow'
-import './List.css';
+import './List.less';
 
 export default class List extends Component {
   state = {

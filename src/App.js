@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import List from './components/list/List';
 import Result from './components/result/Result';
-import './App.css';
+import './App.less';
 
 class App extends Component {
   onUpdateTotal = (pros, cons) => {

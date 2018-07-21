@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Result.css';
+import './Result.less';
 
 class Result extends Component {
   render() {
